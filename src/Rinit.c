@@ -47,7 +47,7 @@ static const R_CMethodDef cMethods[] = {
    {NULL, NULL, 0, NULL}
 };
 
-void R_init_freeknotsplines(DllInfo* info) {
+void R_init_fks(DllInfo* info) {
   R_registerRoutines(info, cMethods, NULL, NULL, NULL);
   R_useDynamicSymbols(info, TRUE);
 }
