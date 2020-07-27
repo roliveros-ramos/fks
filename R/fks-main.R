@@ -66,7 +66,7 @@
 #' @export
 fks = function(x, y, k=10, degree=3, ...) {
   
-  if(length(k)==1) k = c(1, 10)
+  if(length(k)==1) k = c(1, k)
   if(length(k)==2) k = sort(k)
   if(length(k)>2) stop("Incorrect k specification.")
   
