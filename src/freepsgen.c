@@ -8,7 +8,7 @@ double lambda_psgen;
 const int KNOT_POP_SIZE_PSGEN = 1000;
 const int KNOT_NUMBER_FIT_PSGEN = 100;
 const int KNOT_NUMBER_MUTATE_PSGEN = 1000;
-const int KNOT_NUMBER_ITER_PSGEN = 200;
+const int KNOT_NUMBER_ITER_PSGEN = 500;
 
 const int LAMBDA_POP_SIZE_PSGEN = 100;
 const int LAMBDA_NUMBER_FIT_PSGEN = 10;

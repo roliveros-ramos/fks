@@ -7,7 +7,7 @@ struct SP_1D * sp_lsgen;
 const int POP_SIZE_LSGEN = 1000;
 const int NUMBER_FIT_LSGEN = 100;
 const int NUMBER_MUTATE_LSGEN = 1000;
-const int NUMBER_ITER_LSGEN = 200;
+const int NUMBER_ITER_LSGEN = 500;
 const int MIN_SPACE_LSGEN = 2;
 const int NUMBER_LOOPS_LSGEN = 20;
 
