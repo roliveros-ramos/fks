@@ -64,7 +64,7 @@
 #' plot.freekt(xy.freekt, xfit = 0:1000/1000)
 #' 
 #' @export
-fks = function(x, y, k=10, degree=3, prec=NULL, ...) {
+fks = function(x, y, k=10, degree=3, prec=NULL, search="genetic", alg="LS", ...) {
   
   if(length(k)==1) k = c(1, k)
   if(length(k)==2) k = sort(k)
@@ -72,7 +72,8 @@ fks = function(x, y, k=10, degree=3, prec=NULL, ...) {
   
   dat = data.frame(x=x, y=y)
   
-  xknots = fit.search.numknots(x, y, minknot=k[1], maxknot=k[2], degree=degree)
+  xknots = fit.search.numknots(x, y, minknot=k[1], maxknot=k[2], degree=degree, 
+                               alg=alg, search=search)
   knots = c(rep(min(x), degree+1), xknots$optknot, rep(max(x), degree+1))
   
   if(!is.null(prec)) knots = round(knots, prec)
